@@ -1,0 +1,50 @@
+{
+	"name": "@readytogo/server",
+	"version": "1.0.0",
+	"description": "Create a pre-configured express HTTP server",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "jest",
+		"prepack": "npm run build",
+		"prepublishOnly": "npm run test"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": [
+		"server",
+		"express",
+		"http",
+		"middleware",
+		"production",
+		"pre-configured",
+		"out-of-the-box"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Yash-Patel-7/readytogo-server.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Yash-Patel-7/readytogo-server/issues"
+	},
+	"homepage": "https://github.com/Yash-Patel-7/readytogo-server#readme",
+	"author": {
+		"name": "Yash Patel",
+		"email": "yashpatel001995@gmail.com"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"express": "^4.19.2"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.21",
+		"@types/jest": "^29.5.12",
+		"@types/node": "^20.11.30",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.1.2",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.4.3"
+	}
+}
